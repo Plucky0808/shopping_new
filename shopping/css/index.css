@@ -1,0 +1,294 @@
+.main {
+	position: relative;
+	margin-left: 220px;
+	margin-top: 10px;
+	width: 980px;
+	height: 455px;
+
+}
+
+.focus {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 721px;
+	height: 455px;
+	background-color: purple;
+}
+
+.focus ul {
+	/* 使用动画函数需要添加定位 */
+	position: absolute; 
+	width: 600%;
+}
+.focus ul li {
+	float: left;
+}
+
+.arrow-l,
+.arrow-r {
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 24px;
+	height: 40px;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'icomoon';
+	font-size: 18px;
+	z-index: 2;
+}
+
+.arrow-r {
+	right: 0%;
+}
+
+.circle {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+}
+
+.circle li {
+	float: left;
+	width: 8px;
+	height: 8px;
+	/*background-color: #fff;*/
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	margin: 0 3px;
+	border-radius: 50%;
+	/*鼠标经过显示小手*/
+	cursor: pointer;
+}
+.current {
+	background-color: #fff;
+}
+
+
+.news_flash {
+	float: right;
+	width: 250px;
+	height: 455px;
+}
+
+.news {
+	width: 250px;
+	height: 165px;
+	border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 15px;
+	border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h5 {
+	float: left;
+	font-size: 14px;
+}
+
+.news_hd .more {
+	float: right;
+}
+
+.news_hd .more::after {
+	font-family: 'icomoon';
+	content: '\e90a';
+}
+
+.news_bd {
+	padding: 8px 15px 0;
+}
+
+.news_bd ul li {
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.lifeservice {
+	width: 250px;
+	height: 209px;
+	overflow: hidden;
+	/* 将溢出的部分隐藏 */
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+}
+
+.lifeservice ul {
+	/* 扩大li的父级就可以装得下 */
+	width: 252px;
+}
+
+.lifeservice ul li {
+	float: left;
+	width: 63px;
+	/* ul的宽度装不下li 则给ul也就是li的父级扩大即可 */
+	height: 71px;
+	text-align: center;
+	padding-top: 14px;
+	border-right: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li i {
+	display: inline-block;
+	width: 21px;
+	height: 25px;
+	background: url(../img/icons.png) no-repeat -18px -16px;
+}
+
+.bargain {
+	margin-top: 5px;
+}
+
+/* 推荐模块-------- */
+.recom {
+	height: 163px;
+	background-color: pink;
+	margin-top: 12px;
+	background-color: #ebebeb;
+}
+
+.recom_hd {
+	float: left;
+	width: 207px;
+	height: 163px;
+	background-color: #5c5251;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.recom_bd {
+	float: left;
+}
+
+.recom_bd ul li {
+	position: relative;
+	float: left;
+	width: 248px;
+	height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 1px;
+	height: 145px;
+	background-color: #dddddd;
+}
+
+.recom_bd ul li img {
+	width: 248px;
+	height: 163px;
+}
+
+/* 家用电器模块 */
+.box_hd {
+	height: 30px;
+	border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+	float: left;
+	font-size: 18px;
+	color: #C81623;
+}
+
+.tab_list ul {
+	float: right;
+}
+
+.tab_list ul li {
+	float: left;
+	line-height: 30px;
+}
+
+.tab_list ul li a {
+	margin: 0 15px;
+}
+
+.floor .w {
+	margin-top: 30px;
+}
+
+.tab_content {
+	height: 361px;
+}
+
+.tab_list_item>div {
+	float: left;
+}
+
+.col_210 {
+	width: 210px;
+	height: 361px;
+	text-align: center;
+	background-color: #f9f9f9;
+}
+
+.col_210 ul {
+	padding-left: 15px;
+}
+
+.col_210 ul li {
+	float: left;
+	width: 85px;
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px solid #ccc;
+	margin-right: 10px;
+}
+
+.col_329 {
+	width: 329px;
+}
+
+.col_221 {
+	width: 221px;
+	border-right: 1px solid #ccc;
+}
+
+.col_219 {
+	width: 219px;
+}
+
+.bb {
+	display: block;
+	border-bottom: 1px solid #ccc;
+} 
+
+/*电梯导航*/
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+    display: none;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
